@@ -1,0 +1,18 @@
+group 'ru.innopolis.mvc'
+version '0.0.1'
+
+apply plugin: 'java'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile "org.slf4j:slf4j-api:1.7.21";
+    compile "org.slf4j:slf4j-log4j12:1.7.21";
+    compile "com.google.code.gson:gson:2.7";
+}
