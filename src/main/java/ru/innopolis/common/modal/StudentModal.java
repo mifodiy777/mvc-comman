@@ -33,6 +33,8 @@ public class StudentModal implements Serializable {
     //Список занятий
     private List<LessonModal> lessonList;
 
+    private Long version;
+
     public Integer getId() {
         return id;
     }
@@ -79,6 +81,14 @@ public class StudentModal implements Serializable {
 
     public void setLessonList(List<LessonModal> lessonList) {
         this.lessonList = lessonList;
+    }
+
+    public Long getVersion() {
+        return version;
+    }
+
+    public void setVersion(Long version) {
+        this.version = version;
     }
 
     @Override
